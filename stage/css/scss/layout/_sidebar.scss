@@ -1,0 +1,19 @@
+/* Sidebar */
+.page{
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    padding: 15px;
+    background: #ddd;
+    transition: all .3s ease;
+    &.no-sidebar{
+      left: -250px;
+    }
+  }
+}
+
+
+/* End of sidebar */

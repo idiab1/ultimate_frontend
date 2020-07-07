@@ -1,0 +1,3 @@
+*{-webkit-box-sizing:border-box;box-sizing:border-box}body{padding:0;margin:0}.page{min-height:100vh}.page .content-area{width:calc(100% - 250px);min-height:100%;-webkit-transition:all .3s ease;transition:all .3s ease;float:right;will-change:width}.page .content-area.no-sidebar{width:100%}.page .sidebar{position:fixed;top:0;left:0;width:250px;height:100%;padding:15px;background:#ddd;-webkit-transition:all .3s ease;transition:all .3s ease}.page .sidebar.no-sidebar{left:-250px}.header .toggle-sidebar{cursor:pointer}
+
+/*# sourceMappingURL=main.css.map */

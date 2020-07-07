@@ -1,0 +1,18 @@
+- var pageTitle = "Homepage";
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    include pug/layout/style
+    title #{pageTitle}
+  body
+    .page.home-page
+      include pug/layout/sidebar
+      .content-area
+        .header
+          i.fa.fa-exchange-alt.fa.lg.toggle-sidebar
+        .content
+          h1 #{pageTitle}
+    include pug/layout/script
