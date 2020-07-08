@@ -1,1 +1,22 @@
-.sidebar sidebar
+.sidebar
+  .logo-area.text-center Esso
+  ul.list-unstyled.links-area
+    li: a(href="#") Homepage
+    li
+      a.toggle-submenu(href="#")
+        | Forms
+        i.fas.fa-angle-right
+      ul.list-unstyled.child-links
+        li: a(href="#") Input
+        li: a(href="#") Textarea
+        li: a(href="#") Radio
+        li: a(href="#") Checkbox
+    li
+      a.toggle-submenu(href="#")
+        | Misc
+        i.fas.fa-angle-right
+      ul.list-unstyled.child-links
+        li: a(href="#") Loading
+        li: a(href="#") Breadcrumbs
+
+    

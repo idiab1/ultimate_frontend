@@ -1,6 +1,6 @@
 /* Sidebar */
 .page{
-  .sidebar {
+  .sidebar{
     position: fixed;
     top: 0;
     left: 0;
@@ -13,8 +13,78 @@
     &.no-sidebar{
       left: -250px;
     }
+    .logo-area{
+      font-weight: bold;
+      font-size: 26px;
+      padding-bottom: 20px;
+    }
+    .links-area{
+      // All links
+      li{
+        a{
+          color: #fff;
+          padding: 10px 20px;
+          display: block;
+          transition: .3s;
+          &:hover{
+            text-decoration: none;
+          }
+        }
+      }
+      // Main links
+      >li>a{
+        position: relative;
+        padding-left: 20px;
+        &:before{
+          content: '';
+          position: absolute;
+          top: 20px;
+          left: 0;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          border: 2px solid #fff;
+          transform: translate(-50%);
+        }
+        &:hover{
+          padding-left: 30px
+        }
+        .fa-angle-right{
+          position: relative;
+          top: 5px;
+          float: right;
+          transition: .3s;
+          &.down{
+            transform: rotate(90deg);
+          }
+        }
+      }
+      .child-links{
+        position: relative;
+        display: none;
+        &:before{
+          content:'';
+          position: absolute;
+          left: -2px;
+          top: 0;
+          width: 3px;
+          height: 100%;
+          background: #888;
+        }
+        a{
+          position: relative;
+          &:hover:before{
+            content: '';
+            position: absolute;
+            left: -2px;
+            top: 0;
+            width: 3px;
+            height: 100%;
+            background: #fff;
+          }
+        }
+      }
+    }
   }
 }
-
-
 /* End of sidebar */
